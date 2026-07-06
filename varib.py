@@ -8,6 +8,7 @@ print(username)
 print(followers)
 print(verified)
 print(rating)
+#################new value#############
 
 username = input("enter the username:")
 followers = int(input("enter followers count:"))
