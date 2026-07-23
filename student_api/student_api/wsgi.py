@@ -17,3 +17,13 @@ from django.core.wsgi import get_wsgi_application
 
 application = get_wsgi_application()
 app = application
+
+# Run migrations automatically on Vercel startup
+from django.core.management import call_command
+try:
+    print("Running database migrations...")
+    call_command('migrate', interactive=False)
+    print("Migrations completed successfully.")
+except Exception as e:
+    print(f"Error running database migrations: {e}")
+
