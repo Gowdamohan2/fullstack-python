@@ -8,4 +8,5 @@ class CustomUserAdmin(UserAdmin):
         ('Custom Role Info', {'fields': ('role', 'phone_number', 'bio')}),
     )
     list_display = ['username', 'email', 'first_name', 'last_name', 'role', 'is_staff']
-    list_filter = ['role', 'is_staff', 'is_superuser', 'is_active']
+    list_filter = ['role', 'is_staff', 'is_superuser', 'is_active'] 
+    ##########################
